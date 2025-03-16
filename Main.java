@@ -5,10 +5,9 @@ class Linkedlist {
         LinkedList<Character> list = new LinkedList<>();
         System.out.print("Print string: ");
         String str = scanner.nextLine();
-        String newStr = str.replaceAll("[а-яА-Яa-zA-Z0-9]+", "");
-        for (char c : newStr.toCharArray()) {
+        for (char c : str.toCharArray()) {
             list.add(c);
         }
-        System.out.println("Reversed char symbol: " + list.reversed());
+        System.out.println("Reversed symbol: " + list.reversed());
     }
 }
